@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  html {
+    font-family: var(--font-body);
+    background-color: #06080d;
+    color: #f1f5f9;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom cinematic utility accents */
+.font-heading {
+  font-family: 'Outfit', sans-serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom subtle ambient glow */
+.electric-glow {
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.45);
+}
+
+.subtle-box-glow {
+  box-shadow: 0 0 40px -10px rgba(37, 99, 235, 0.15);
+}
+
+/* Hide scrollbar for clean horizontal scrolling if needed */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
